@@ -23,12 +23,12 @@ deselectCheckInstances(app);
 % Select check Identify unconnected lines, input ports, and output ports
 instanceID1 = getCheckInstanceIDs(app, 'mathworks.design.UnconnectedLinesPorts');
 instanceID2 = getCheckInstanceIDs(app, 'mathworks.design.RootInportSpec');
-instanceID3 = getCheckInstanceIDs(app, 'mathworks.design.OptimizationSettings');
+% instanceID3 = getCheckInstanceIDs(app, 'mathworks.design.OptimizationSettings');
 
 %checkinstances = {instanceID1(1),instanceID2(1), instanceID3(1)};
 selectCheckInstances(app, 'IDs', instanceID1(1));
 selectCheckInstances(app, 'IDs', instanceID2(1));
-selectCheckInstances(app, 'IDs', instanceID3(1));
+% selectCheckInstances(app, 'IDs', instanceID3(1));
 
 %Run Model Advisor analysis.
 run(app);
