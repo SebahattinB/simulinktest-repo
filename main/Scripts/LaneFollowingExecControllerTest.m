@@ -2,11 +2,6 @@
 
 disp('Begin controller test')
 
-% Move to working directory
-prj = matlab.project.currentProject;
-cd(prj.ProjectStartupFolder);
-
-tsx = sltest.testmanager.load('LaneFollowingTestScenarios.mldatx');
-results = run(tsx);
+results = runtests('test/LaneFollowingTestScenarios.mldatx');
 
 disp('End controller test')
