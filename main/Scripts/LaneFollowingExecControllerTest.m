@@ -7,4 +7,6 @@ disp('Begin controller test')
 
 results = runtests('test/LaneFollowingTestScenarios.mldatx');
 
+save_system
+
 disp('End controller test')
