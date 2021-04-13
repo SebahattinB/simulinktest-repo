@@ -109,7 +109,7 @@ if ~wasReModelLoaded
     load_system(refModel)
     blk=find_system(refModel,'System','multiObjectTracker');
     multiObjectTracker.createBus(blk{1});
-    close_system(refModel)
+    close_system(refModel,0) %added zero flag
 else
     blk=find_system(refModel,'System','multiObjectTracker');
     multiObjectTracker.createBus(blk{1});

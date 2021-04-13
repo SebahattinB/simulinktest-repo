@@ -42,7 +42,7 @@ result = getResults(app);
 report = generateReport(app);
 
 % Save model
-save_system(TopModel);
+close_system('LaneFollowingTestBenchExample', 0)
 
 disp('End Model Advisor analysis')
 
