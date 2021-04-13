@@ -41,8 +41,8 @@ result = getResults(app);
 %Generate and view the Model Advisor report. The Model Advisor runs the check on both mdlref_basic and mdlref_counter.
 report = generateReport(app);
 
-% Save model
-close_system('LaneFollowingTestBenchExample', 0)
+% Close the model
+bdclose('all')
 
 disp('End Model Advisor analysis')
 
