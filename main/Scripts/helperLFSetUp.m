@@ -15,8 +15,8 @@ Ts = 0.1;               % Simulation sample time  (s)
 %% Path following Controller Parameters
 time_gap        = 1.5;   % time gap               (s)
 default_spacing = 10;    % default spacing        (m)
-max_ac          = 1;   % Maximum acceleration   (m/s^2)
-min_ac          = -1;  % Minimum acceleration   (m/s^2)
+max_ac          = 2;   % Maximum acceleration   (m/s^2)
+min_ac          = -2;  % Minimum acceleration   (m/s^2)
 max_steer       = 0.26;  % Maximum steering       (rad)
 min_steer       = -0.26; % Minimum steering       (rad) 
 PredictionHorizon = 30;  % Prediction horizon     

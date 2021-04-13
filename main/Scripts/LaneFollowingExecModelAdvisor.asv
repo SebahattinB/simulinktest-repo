@@ -1,6 +1,10 @@
-%% Copyright 2021 The MathWorks, Inc.
-% Model Advisor Check to ensure Test Bench and Referenced Subsystem do not have any unconnected lines, input ports, and output ports and that 
-% the root model's Inport blocks fully define dimensions, sample time, and data type. 
+% Copyright 2021 The MathWorks, Inc.
+%% Model Advisor Check to ensure Test Bench and Referenced Subsystem do not 
+% have any unconnected lines, input ports, and output ports and that 
+% the root model's Inport blocks fully define dimensions, sample time, and
+% data type. 
+
+
 
 disp('Begin Model Advisor analysis')
 

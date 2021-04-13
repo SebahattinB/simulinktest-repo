@@ -28,14 +28,10 @@ jobs:
       - name: Setup MATLAB
         uses: matlab-actions/setup-matlab@v0
 
-      # As an alternative to run-tests, you can use run-command to execute a MATLAB script, function, or statement.
+      # Use run-command to execute MATLAB scripts, functions, or statements.
       - name: Run all tests
         uses: matlab-actions/run-command@v0
         with:
           command: addpath('main', 'test'); matlab.project.loadProject('main/SltestLaneFollowingExample.prj'); LaneFollowingExecModelAdvisor; LaneFollowingExecControllerTest;
           
-      # Runs a set of commands using the runners shell
-      - name: Run all tests
-        uses: matlab-actions/run-tests@v0
-        with:
-          source-folder: main
+
