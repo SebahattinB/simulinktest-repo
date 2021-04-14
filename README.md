@@ -1,12 +1,12 @@
-# Continuous Integration (CI) configuration examples for MATLAB&reg;
+# Continuous Integration (CI) configuration examples for Simulink&reg;
 
 Are you interested in automating your testing with CI?
 
-Not sure how to connect MATLAB with CI systems?
+Not sure how to connect Simulink with CI systems?
 
 We've got you covered!
 
-This repository makes it easy to run your MATLAB tests on some of the most common CI platforms. The configuration files take care of setting up MATLAB to work with the CI system and automatically executing your MATLAB tests.
+This repository makes it easy to run your Simulink checks and tests on some of the most common CI platforms. The configuration files take care of setting up Simulink to work with the CI system and automatically executing your Simulink tests.
 
 Take a look at the "Quick Start Guide" below to get started!
 
@@ -33,7 +33,7 @@ Here's how to quickly get this repository running on a CI system:
 
 That's really it!
 
-To use your MATLAB code or Simulink&reg; models with this repository, simply replace the existing code and tests in "main" and "test" with your own code and tests. There's no need to modify any of the CI configuration files because they are all completely agnostic of the MATLAB code being used.
+To use your MATLAB code or Simulink&reg; models with this repository, simply replace the existing code and tests in "main" and "test" with your own scripts, model files, and tests. There's no need to modify any of the CI configuration files because they are all completely agnostic of the MATLAB code being used.
 
 ***Note:*** In most cases, the configuration files will automatically get picked up by the CI platform during step 3, but some platforms may require you to specify which file to use.
 
