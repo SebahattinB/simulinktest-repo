@@ -29,12 +29,12 @@ jobs:
         uses: matlab-actions/setup-matlab@v0
 
       # Use run-command to execute MATLAB scripts, functions, or statements.
-      - name: Run all tests
+      - name: Run Model Advisor Script with Simulink Check
         uses: matlab-actions/run-command@v0
         with:
           command: addpath('main', 'test'); matlab.project.loadProject('main/SltestLaneFollowingExample.prj'); LaneFollowingExecModelAdvisor;
           
-      - name: Run run-test command
+      - name: Run Simulink Test File and Generate Reports of Results
         uses: matlab-actions/run-tests@v0
         with:
             source-folder: main
