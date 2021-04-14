@@ -42,7 +42,10 @@ result = getResults(app);
 report = generateReport(app);
 
 % Close the model
-bdclose('all')
+close_system({'drivinglib','trackingutilitieslib','mpcsigdimcheck_private',...       
+    'mpclib','LFRefMdl','autolibpowerinfoutilscommon','autolibpowerinfoutils',...        
+    'simulink','autolibutils','sharedutil','sharedtransform','autolibsharedcommon',...          
+    'autolibshared','drivingscenarioandsensors','LaneFollowingTestBenchExample'},0)
 
 disp('End Model Advisor analysis')
 
